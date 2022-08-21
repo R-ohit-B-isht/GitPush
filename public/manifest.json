@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "GitChef",
+    "description": "Automatically integrate your CodeChef submissions to GitHub",
+    "version": "1.0.0",
+    "author": "Rohit Bisht",
+    "browser_action": {
+      "default_popup": "index.html"
+    },
+    "icons": {
+      "16": "assets/thumbnail.png",
+      "48": "assets/thumbnail.png",
+      "128": "assets/thumbnail.png"
+    },
+    "background": {
+      "scripts": ["build/bundle.js"],
+      "persistent": false
+    },
+    "permissions": [
+      "https://github.com/*",
+      "https://api.github.com/*",
+      "https://codechef.com/*",
+      "tabs",
+      "unlimitedStorage",
+      "storage"
+    ]
+  }
